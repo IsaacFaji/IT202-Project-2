@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luxe Living - Designer Login</title>
+    <link rel="stylesheet" href="project1styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Luxe Living Designer Interface</h2>
+
+    <form id="loginForm" action="login.php" method="post">
+
+        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+
+        <input type="text" id="phone" name="phone" placeholder="Phone (123-456-7890 ext123)">
+
+        <input type="text" id="designerID" name="designerID" placeholder="Designer ID (3 digits)">
+
+        <input type="text" id="email" name="email" placeholder="Email Address">
+
+        <div class="password-wrapper">
+            <input type="password" id="password" name="password" placeholder="Password (Max 6 chars)">
+            <span id="togglePassword">👁</span>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="emailConfirm" name="emailConfirm">
+            <label for="emailConfirm">Check to Request Email Confirmation</label>
+        </div>
+
+        <select id="transaction" name="transaction">
+            <option value="">Select Transaction</option>
+            <option>Search A Designer's Accounts</option>
+            <option>Book A Client's Design Project</option>
+            <option>Cancel A Client's Design Project</option>
+            <option>Design Services Specs</option>
+            <option>Request Additional Design Specs</option>
+            <option>Create A New Client Account</option>
+        </select>
+
+        <button type="submit" onclick="return validate()">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</div>
+
+<script src="project1script.js"></script>
+</body>
+</html>
