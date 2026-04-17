@@ -56,14 +56,14 @@ if ($result->num_rows > 0) {
             break;
 
         default:
-            header("Location: index.html");
+            header("Location: 202project1.html");
     }
 
 } else {
 
     echo "<script>
             alert('Designer account not found.');
-            window.location.href='index.html';
+            window.location.href='202project1.html';
           </script>";
 }
 

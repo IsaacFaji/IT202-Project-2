@@ -3,7 +3,7 @@ session_start();
 include("db_connect.php");
 
 if (!isset($_SESSION['designer_id'])) {
-    header("Location: index.html");
+    header("Location: 202project1.html");
     exit();
 }
 
